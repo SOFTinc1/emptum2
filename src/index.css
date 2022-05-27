@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "NewYork";
+  src: local("NewYork"), url(./fonts/NewYork.ttf) format("truetype");
+}
+
+
+@font-face {
+  font-family: "Euclid";
+  src: local("Euclid"), url(./fonts/euclid/Euclid\ Circular\ A\ Regular.ttf) format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "NewYork", "Euclid";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media screen and (max-width: 800px) {
+    padding: 0;
+  }
+}

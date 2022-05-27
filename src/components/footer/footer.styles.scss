@@ -1,0 +1,20 @@
+.footer{
+    padding: 2rem 5rem 2rem 5rem;
+
+    hr {
+        height:1px;
+        border:none;
+        background-color:#ECEFF1;
+    }
+
+    p {
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 0.12rem;
+        font-family: "Euclid";
+    }
+
+    span {
+        font-weight: bolder;
+    }
+}
