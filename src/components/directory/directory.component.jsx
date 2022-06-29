@@ -4,14 +4,17 @@ import { createStructuredSelector } from "reselect";
 import { selectDirectorySections } from "../../redux/directory/directory.selectors";
 import MenuItem from "../menu-item/menu-items.component";
 import "./directory.styles.scss";
+import Slide from "react-reveal/Slide";
 
 const Directory = ({ sections }) => (
   
-  <div className="directory-menu">
+  <Slide bottom>
+    <div className="directory-menu">
     { sections.map(({id, ...otherSectionProps}) => (
       <MenuItem key={id} {...otherSectionProps} />
     ))}
   </div>
+  </Slide>
 
 )
 

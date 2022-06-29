@@ -8,8 +8,9 @@ const SearchBox = () => (
   <SearchFormContainer>
     <SearchForm>
       <Input placeholder="enter name of item"/>
-      <Input placeholder="enter item's manufacturer"/>
-      <Input placeholder="enter manufacturer's location"/>
+      {/* <Input placeholder="enter item's manufacturer"/> */}
+      <br />
+      {/* <Input placeholder="enter manufacturer's location"/> */}
       <ButtonInSearch as={CustomButton}>
         find item
       </ButtonInSearch>

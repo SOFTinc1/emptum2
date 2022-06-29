@@ -1,50 +1,45 @@
 import styled from "styled-components";
 
 export const SearchFormContainer = styled.div`
-  width: 80vw;
+  width: 90%;
   // top: 20px;
-  left: 10rem;
+  // left: 10rem;
   box-sizing: border-box;
   position: absolute;
   background: none;
-  opacity: 0.8;
+  // opacity: 0.8;
   // border: 2px solid #000;
   border-radius: none;
   padding: 20px 10px 20px 0px;
 
   @media screen and (max-width: 950px) {
-    left: 5rem;
+    // left: 5rem;
   }
 
   @media screen and (max-width: 800px) {
-    width: 60vw;
+    // width: 60%;
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     left: 0rem;
   }
 
-  @media screen and (max-width:550px){
-    left: 0rem;
-  }
+
 `;
 
 export const SearchForm = styled.form`
   display: flex;
+  flex-direction: column;
   align-items: center;
   list-style: none;
+  width: 100%;
 
   @media screen and (max-width: 800px) {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
   }
 
-  @media screen and (max-width: 550px) {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-  }
 `;
 
 export const Input = styled.input`
@@ -73,31 +68,24 @@ export const Input = styled.input`
   }
 
   &:focus {
-    background: Black;
-    color: #fff;
-    border: none;
-    padding: 1.6rem;
-    transform: scale(1.0);
+    background: Transparent;
+    color: #000;
+    // padding: 1.6rem;
+    // transform: scale(1.0);
   }
 
   @media screen and (max-width: 800px) {
     margin: 0 0 10px 0;
-    width: 90%;
+    width: 100%;
   }
   
-  @media screen and (max-width:550px){
-    width: 90%;
-  }
 `;
 
 export const ButtonInSearch = styled.button`
-  width: 500px;
+  width: 100%;
 
   @media screen and (max-width: 800px) {
-    width: 90%;
+    width: 100%;
   }
 
-  // @media screen and (max-width: 900px) {
-  //   width: 90%;
-  // }
 `;

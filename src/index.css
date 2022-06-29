@@ -9,9 +9,14 @@
   src: local("Euclid"), url(./fonts/euclid/Euclid\ Circular\ A\ Regular.ttf) format("truetype");
 }
 
+@font-face {
+  font-family: 'Mighty';
+  src: local('Mighty'), url(./fonts/Mighty\ Ditey\ NF\ W01\ Regular.ttf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: "NewYork", "Euclid";
+  /* font-family: "NewYork", "Euclid"; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
