@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body {
-        font-family: "NewYork","Euclid";
+        font-family: "Mighty", "NewYork","Euclid";
     }
 
     a {
