@@ -9,7 +9,7 @@ export const HomepageBanner2Container = styled.div`
 `;
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: 1.5fr 0.1fr 3fr ;
+  grid-template-columns: 1.5fr 0.01fr 3fr ;
   grid-gap: 0px;
 
   @media screen and (max-width: 800px) {
@@ -61,7 +61,7 @@ export const H1 = styled.h1`
   text-transform: uppercase;
   letter-spacing: 10px;
   font-size: 80px;
-  transform: scale(1, 1.6);
+  transform: scale(1, 1.4);
   padding: 0 0 0 30px;
 
   @media screen and (max-width: 800px) {
@@ -86,10 +86,10 @@ export const InnerRow2 = styled.div`
   }
 `;
 export const Flex = styled.div`
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  border-left: none;
-  border-right: none;
+  // border-top: 1px solid #000;
+  // border-bottom: 1px solid #000;
+  // border-left: none;
+  // border-right: none;
   height: 164px;
   padding: 0 0 0 20px;
 

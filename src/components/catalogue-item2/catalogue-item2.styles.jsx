@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const CatalogueItem1Container = styled.div`
-  height: 100vh;
+  height: 20%;
   padding: 0;
-  margin: -100px 0 0 2px;
+  // margin: -100px 0 0 2px;
 `;
 export const Row = styled.div`
   display: grid;
@@ -28,7 +28,8 @@ export const ButtonT = styled.button`
 `;
 export const ImageSrc = styled.img`
   width: 100%;
-  height: 108%;
+  // height: 108%;
+  height: 100%;
   padding: 20px 20px 0 0;
   border-top: 1px solid #000;
   border-right: 1px solid #000;

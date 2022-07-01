@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const CatalogueItem1Container = styled.div`
-  height: 100vh;
+  height: 30%;
   padding: 0;
-  margin: -30px 0 0 0;
+  // margin: -30px 0 0 0;
 `;
 export const Row = styled.div`
   display: grid;
@@ -26,7 +26,8 @@ export const P = styled.p`
 export const ButtonT = styled.button``;
 export const ImageSrc = styled.img`
   width: 100%;
-  height: 110%;
+  // height: 110%;
+  height: 100%;
   padding: 0 0 20px 20px;
   border-top: none;
   border-right: none;

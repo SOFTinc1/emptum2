@@ -3,6 +3,7 @@ import Image1 from "../../assets/images/POTRAIT.jpg";
 
 export const CatalogueOverviewContainer = styled.div`
   background: #FAFAFA;
+  height: 100%;
 `;
 export const UpperRow = styled.div`
   display: grid;
@@ -42,7 +43,8 @@ export const LowerRow = styled.div`
   grid-template-columns: 2fr 4fr;
   grid-gap: 20px;
   margin: 50px 0 0 0;
-  padding: 0 80px;
+  padding: 0 50px;
+  height: 100%;
 `;
 export const Col3 = styled.div`
   // background: url(${Image1});

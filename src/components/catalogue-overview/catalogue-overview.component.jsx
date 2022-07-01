@@ -17,7 +17,7 @@ import {
 // import Button from "../button/button.component";
 import CatalogueItem1 from "../catalogue-item1/catalogue-item1.component";
 import CatalogueItem2 from "../catalogue-item2/catalogue-item2.component";
-import Image1 from "../../assets/images/POTRAIT.jpg";
+import Image1 from "../../assets/images/1.jpg";
 
 const CatalogueOverview = () => (
   <CatalogueOverviewContainer>

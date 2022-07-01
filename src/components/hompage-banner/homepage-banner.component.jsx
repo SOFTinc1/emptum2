@@ -18,6 +18,7 @@ import {
   SearchCont,
   ImageSrc2,
 } from "./homepage-banner.styles";
+import "./homepage.scss";
 import CustomButton from "../custom-button/custom-button.component";
 import Image1 from "../../assets/images/1.jpg";
 import Image2 from "../../assets/images/2.jpg";

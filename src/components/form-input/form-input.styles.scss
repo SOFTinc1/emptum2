@@ -21,7 +21,8 @@ $main-color: black;
     width: 100%;
     border: 0.15rem solid #546E7A;
     border-radius: 0;
-    // border-bottom: 1px solid $sub-color;
+    font-family: "euclid";
+    font-weight: 400;
     margin: 25px 0;
 
     &:focus {
@@ -41,6 +42,7 @@ $main-color: black;
 
   input[type='password'] {
     letter-spacing: 0.3em;
+    font-family: "euclid";
   }
 
   .form-input-label {
@@ -53,6 +55,7 @@ $main-color: black;
     top: 10px;
     transition: 300ms ease all;
     text-transform: capitalize;
+    font-family: "euclid";
 
     @media screen and (max-width: 800px) {
       left: 50px;

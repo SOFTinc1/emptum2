@@ -4,6 +4,7 @@ const ButtonStyles = css`
   background-color: #000;
   color: #fff;
   border: none;
+  border-radius: 3px;
   transition: all .7s ease-in-out; 
 
   &:hover {
@@ -58,11 +59,11 @@ export const CustomButtonContainer = styled.button`
   padding: 0 15px;
   font-size: 15px;
   text-transform: uppercase;
-  font-weight: bolder;
+  font-weight: 400;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  font-family: "NewYork";
+  font-family: euclid;
   text-transform: capitalize;
 
   ${getButtonStyles}
