@@ -16,11 +16,11 @@ export const GlobalStyle = createGlobalStyle`
 
     a {
         text-decoration: none;
-        color: #aaa;
+        color: #000;
     }
 
     a:hover {
-        color: #000;
+        color: #fff;
     }
 
     button { 

@@ -1,5 +1,6 @@
 import React from "react";
 import "./homepage.styles.scss";
+import MyHeader from "../../components/MyHeader/MyHeader.component";
 import Directory from "../../components/directory/directory.component";
 import HomepageBanner from "../../components/hompage-banner/homepage-banner.component";
 import CatalogueOverview from "../../components/catalogue-overview/catalogue-overview.component";
@@ -9,6 +10,7 @@ import CatalogueOneContd from "../../components/catalogue-one-contd/catalogue-on
 
 const Homepage = () => (
   <div className="homepage">
+    <MyHeader />
     <HomepageBanner />
     <Directory />
     <CatalogueOverview />
