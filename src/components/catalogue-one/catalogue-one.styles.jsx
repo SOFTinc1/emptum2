@@ -1,11 +1,10 @@
 import styled from "styled-components";
 import ImageS from "../../assets/images/POTRAIT.jpg";
-import Bg from "../../assets/images/bg.jpg";
+// import Bg from "../../assets/images/bg.jpg";
 
 export const CatalogueOneContainer = styled.div`
-  padding: 80px 350px;
-  // background: #424242;
-  background: url(${Bg});
+  padding: 50px 350px;
+  background: #424242;
   background-size: cover;
 `;
 export const Row = styled.div`

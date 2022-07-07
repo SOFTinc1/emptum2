@@ -1,72 +1,32 @@
 import React from "react";
-// import {
-//   HomepageBanner2Container,
-//   BackgroundOverlay,
-//   H1,
-//   Scroll,
-//   IconScroll,
-// } from "./homepage-banner.styles";
 import {
   HomepageBanner2Container,
   Row,
   ImageSrc,
-  ImageMobile,
-  InnerRow,
   H1,
-  InnerRow2,
-  Flex,
-  SearchCont,
-  ImageSrc2,
+  Col1,
+  Col2,
+  P
 } from "./homepage-banner.styles";
-import "./homepage.scss";
-import CustomButton from "../custom-button/custom-button.component";
-import Image1 from "../../assets/images/1.jpg";
-import Image2 from "../../assets/images/2.jpg";
+import Image1 from "../../assets/images/b.jpg";
 import Slide from "react-reveal/Slide";
-import SearchBox from "../search-box/search-box.components";
-
-// const HomepageBanner = () => (
-//   <HomepageBanner2Container>
-//     <BackgroundOverlay>
-//       <Slide top>
-//         <H1>
-//           amazing deals <br /> from <br /> manufacturer
-//         </H1>
-//       </Slide>
-//       <Slide right>
-//         <SearchBox />
-//       </Slide>
-//       <Slide bottom>
-//         <Scroll align="center">
-//           <IconScroll></IconScroll>
-//         </Scroll>
-//       </Slide>
-//     </BackgroundOverlay>
-//   </HomepageBanner2Container>
-// );
+// import SearchBox from "../search-box/search-box.components";
 
 const HomepageBanner = () => (
   <HomepageBanner2Container>
     <Row>
       <Slide left>
-        <ImageSrc src={Image1} />
-        <ImageMobile src={Image2} />
+        <Col1>
+          <H1>unleash the ravishing within-g</H1>
+          {/* <SearchBox /> */}
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti minus libero nostrum autem accusamus omnis fugit recusandae iste eaque.</P>
+        </Col1>
       </Slide>
-      <InnerRow>
-        <Slide top>
-          <H1>amazing deals from manufacturer</H1>
-        </Slide>
-        <InnerRow2>
-          <Slide bottom>
-            <Flex>
-              <SearchCont as={SearchBox} />
-            </Flex>
-          </Slide>
-          <Slide right>
-            <ImageSrc2 src={Image2} />
-          </Slide>
-        </InnerRow2>
-      </InnerRow>
+      <Slide right>
+        <Col2>
+          <ImageSrc src={Image1} />
+        </Col2>
+      </Slide>
     </Row>
   </HomepageBanner2Container>
 );

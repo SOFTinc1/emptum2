@@ -6,48 +6,48 @@ import {
   Col1,
   Col2,
   Col3,
-  Col4,
-  Img1,
-  Img2,
-  Img3,
-  Img4,
-  Title,
-  Button,
+  H2,
+  P,
+  // ImagesSrc,
 } from "./catalogue-one-contd.styles";
-import CustomButton from "../custom-button/custom-button.component";
-import Image1 from "../../assets/images/d.jpg";
-import Image2 from "../../assets/images/c.jpg";
-import Image3 from "../../assets/images/POTRAIT.jpg";
-import Image4 from "../../assets/images/2.jpg";
+import Slide from "react-reveal/Slide";
+// import Image1 from "../../assets/images/b.jpg";
+// import CustomButton from "../custom-button/custom-button.component";
+// import Image2 from "../../assets/images/c.jpg";
+// import Image3 from "../../assets/images/POTRAIT.jpg";
+// import Image4 from "../../assets/images/2.jpg";
 
 const CatalogueOneContd = () => (
   <CatalogueOneContdContainer>
+    <Slide left>
     <H1>
       here is your one stop shopping store to get all your fashion items,
       without having to compromise on the quality.
     </H1>
     <Row>
       <Col1>
-        <Img1 src={Image1} />
-        <Title>womens</Title>
-        <Button as={CustomButton}>enter</Button>
+        <H2>mens</H2>
+        <P>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          recusandae.
+        </P>
       </Col1>
       <Col2>
-        <Title>jackets</Title>
-        <Button as={CustomButton}>enter</Button>
-        <Img2 src={Image2} />
+        <H2>womens</H2>
+        <P>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          recusandae.
+        </P>
       </Col2>
       <Col3>
-        <Img3 src={Image3} />
-        <Title>hats</Title>
-        <Button as={CustomButton}>enter</Button>
+        <H2>jackets</H2>
+        <P>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
+          recusandae.
+        </P>
       </Col3>
-      <Col4>
-        <Title>sneakers</Title>
-        <Button as={CustomButton}>enter</Button>
-        <Img4 src={Image4} />
-      </Col4>
     </Row>
+    </Slide>
   </CatalogueOneContdContainer>
 );
 

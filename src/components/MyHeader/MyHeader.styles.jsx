@@ -13,6 +13,8 @@ export const MyHeaderContainer = styled.div`
 export const LogoH1 = styled.h1`
   width: 100%;
   margin: 0;
+  font-family: Syne;
+  font-weight: 400;
 
   @media screen and (max-width: 800px) {
     margin: 10px 0 0 0;
@@ -78,7 +80,8 @@ export const A = styled.a`
   line-height: 100px;
   transition: all 0.3s ease;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: lowercase;
+  font-family: Syne;
 
   &::after {
     position: absolute;

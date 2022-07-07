@@ -1,40 +1,34 @@
 import styled from "styled-components";
+// import Bg from "../../assets/images/b.jpg";
 
 export const CatalogueOneContdContainer = styled.div`
   // padding: 30px 80px;
   background: #FBFBFB;
   background-size: cover;
 `;
-export const H1 = styled.h1`
-  padding: 30px 120px;
-  font-size: 35px;
-  text-transform: uppercase;
-  font-family: euclid;
-  text-align: center;
-  color: #000;
-`;
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 7fr 5fr;
   grid-gap: 0px;
 `;
 export const Flex = styled.div`
   display: flex;
   flex-direction: column;
 `;
-export const Col1 = styled.div`
-  border: 1px solid #aaa;
-  height: 200px;
+export const Col4 = styled.div`
+  
 `;
-export const Col2 = styled.div`
-  border-top: 1px solid #aaa;
-  border-right: 1px solid #aaa;
+export const Col5 = styled.div`
   border-bottom: 1px solid #aaa;
-  border-left: none;
+  height: 150px;
 `;
-export const Col3 = styled.div`
-  background: #424242;
-  color: #fff;
+export const Col6 = styled.div`
+border-bottom: 1px solid #aaa;
+height: 150px;
+`;
+export const ImagesSrc = styled.img`
+  width: 800px;
+  height: 300px;
 `;
 export const H2 = styled.h1`
   Padding: 0 20px;
@@ -42,7 +36,7 @@ export const H2 = styled.h1`
   font-size: 15px;
 `;
 export const P = styled.p`
-  margin: 130px 20px 0 20px;
+  margin: 100px 20px 0 20px;
   font-family: Syne;
   font-size: 12px;
 `;
