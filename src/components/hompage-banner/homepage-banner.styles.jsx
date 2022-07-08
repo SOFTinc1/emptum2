@@ -7,9 +7,8 @@ export const HomepageBanner2Container = styled.div`
   background: linear-gradient(to right, #e3f2fd28 20%, #fffde72c 50%);
 
   @media screen and (max-width: 800px) {
-    padding: 30px 10px;
+    padding: 30px 10px 770px 10px;
     height: 100vh;
-    
   }
 `;
 // export const Row = styled.div`
@@ -55,8 +54,8 @@ export const H1 = styled.h1`
   text-transform: lowercase;
   vertical-align: Top;
   letter-spacing: 4px;
-  margin: 50px 0 0 0;
-  transform: scale(1, 3);
+  margin: 30px 0 0 0;
+  transform: scale(1, 2);
   font-stretch: ultra-condensed // transform: translateX(100%);
     // -moz-animation: my-animation 15s linear infinite;
     // -webkit-animation: my-animation 15s linear infinite;
@@ -83,8 +82,12 @@ export const H1 = styled.h1`
     margin: 100px 0 50px 0;
     transform: scale(1, 2.2);
     text-align: center;
-    // padding: 0;
   }
+`;
+
+export const Span = styled.span`
+  border: 2px solid #0D47A1;
+  border-radius: 100%;
 `;
 
 export const P = styled.p`

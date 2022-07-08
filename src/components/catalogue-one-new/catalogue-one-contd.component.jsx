@@ -33,14 +33,14 @@ const CatalogueOneNew = () => (
           </P>
         </Col1>
         <Col2>
-          <H2>mens</H2>
+          <H2>womens</H2>
           <P>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
             recusandae.
           </P>
         </Col2>
         <Col3>
-          <H2>mens</H2>
+          <H2>jackets</H2>
           <P>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
             recusandae.
@@ -49,14 +49,14 @@ const CatalogueOneNew = () => (
         <Col4>{/* <ImagesSrc src={Image1} /> */}</Col4>
         <Flex>
           <Col5>
-            <H2>mens</H2>
+            <H2>hats</H2>
             <P2>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
               recusandae.
             </P2>
           </Col5>
           <Col6>
-            <H2>mens</H2>
+            <H2>sneakers</H2>
             <P2>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
               recusandae.

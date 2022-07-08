@@ -6,14 +6,15 @@ import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
 
 
-// import MyHeader from "./components/MyHeader/MyHeader.component";
+import MyHeader from "./components/MyHeader/MyHeader.component";
 import Homepage from "./pages/homepage/homepage.component";
+import SignInPage from "./pages/sign-in/signin-page";
+import SignUpPage from "./pages/sign-up/signup-page";
 import ShopPage from "./pages/shop/shop.component";
-import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up";
 import CheckoutPage from "./pages/checkout/checkout.component";
 import CollectionsOverview from "./components/collections-overview/collections-overview.component";
 import CollectionPage from "./pages/collection/collection.component";
-// import Footer from "./components/footer/footer.component";
+import Footer from "./components/footer/footer.component";
 
 import { GlobalStyle } from "./components/global.styles";
 
@@ -53,7 +54,7 @@ class App extends React.Component {
     return (
       <div>
         <GlobalStyle />
-        {/* <MyHeader /> */}
+        <MyHeader />
         <Routes>
           <Route exact path="/" element={<Homepage />} />
 
@@ -70,12 +71,13 @@ class App extends React.Component {
               this.props.currentUser ? (
                 <Navigate to="/" />
               ) : (
-                <SignInAndSignUpPage />
+                <SignInPage />
               )
             }
           />
+          <Route exact path="/signup" element={<SignUpPage />} />
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     );
   }

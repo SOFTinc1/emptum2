@@ -1,13 +1,11 @@
 import React from "react";
 import {
   HomepageBanner2Container,
-  // Row,
-  // ImageSrc,
   H1,
   Col1,
-  // Col2,
   P,
-  Search
+  Search,
+  Span
 } from "./homepage-banner.styles";
 import "./a.css";
 // import Image1 from "../../assets/images/b.jpg";
@@ -18,7 +16,7 @@ const HomepageBanner = () => (
   <HomepageBanner2Container>
     <Slide left>
       <Col1 id="scroll-container">
-        <H1>unleash your ravishing within-g</H1>
+        <H1>unleash your <Span>ravishing</Span> within-g</H1>
         <P id="scroll-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti
           minus libero nostrum autem accusamus omnis fugit recusandae iste

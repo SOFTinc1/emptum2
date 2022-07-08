@@ -15,6 +15,7 @@ export const LogoH1 = styled.h1`
   margin: 0;
   font-family: Syne;
   font-weight: 400;
+  cursor: pointer;
 
   @media screen and (max-width: 800px) {
     margin: 10px 0 0 0;
