@@ -12,6 +12,7 @@ import {
   Li,
   A,
   LogoH1,
+  Sup
 } from "./MyHeader.styles";
 import "./MyHeader.styles.css";
 import { connect } from "react-redux";
@@ -34,7 +35,7 @@ const MyHeader = ({ currentUser, hidden }) => {
         </Col1>
         <Col2>
           {/* <Logo src={LogoImg} /> */}
-          <LogoH1 onClick={() => {navigate("/");}}>emptum .</LogoH1>
+          <LogoH1 onClick={() => {navigate("/");}}>emptum.</LogoH1>
         </Col2>
         <Col3>
           <input type="checkbox" id="active"></input>
@@ -50,18 +51,18 @@ const MyHeader = ({ currentUser, hidden }) => {
                   </A>
                 ) : (
                   <A className="option" onClick={() => {navigate("/signin");}}>
-                    sign in
+                    <Sup>01</Sup> sign in
                   </A>
                 )}
               </Li>
               <Li>
-                <A onClick={() => {navigate("/shop");}}>shop</A>
+                <A onClick={() => {navigate("/shop");}}> <Sup>02</Sup> shop</A>
               </Li>
               <Li>
-                <A >about</A>
+                <A > <Sup>03</Sup> about</A>
               </Li>
               <Li>
-                <A >last</A>
+                <A ><Sup>04</Sup> last</A>
               </Li>
             </Ul>
           </Wrapper>

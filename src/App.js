@@ -13,7 +13,7 @@ import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up
 import CheckoutPage from "./pages/checkout/checkout.component";
 import CollectionsOverview from "./components/collections-overview/collections-overview.component";
 import CollectionPage from "./pages/collection/collection.component";
-import Footer from "./components/footer/footer.component";
+// import Footer from "./components/footer/footer.component";
 
 import { GlobalStyle } from "./components/global.styles";
 
@@ -75,7 +75,7 @@ class App extends React.Component {
             }
           />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const MyHeaderContainer = styled.div`
   margin: 0;
   padding: 10px 30px;
-  //   background: #000;
   width: 100%;
+  
 
   @media screen and (max-width: 800px) {
     padding: 10px;
@@ -60,11 +60,19 @@ export const ImageSrc = styled.img`
 `;
 export const Ul = styled.ul`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 10%;
+  // left: 50%;
+  // transform: translate(-50%, -50%);
   list-style: none;
-  text-align: center;
+  text-align: left;
+
+  @media screen and (max-width: 800px) {
+    left: 10%;
+  }
+`;
+export const Sup = styled.sup`
+  font-size: 20px;
+  opacity: .7;
 `;
 export const Li = styled.li`
   margin: 15px 0;
@@ -82,6 +90,7 @@ export const A = styled.a`
   cursor: pointer;
   text-transform: lowercase;
   font-family: Syne;
+
 
   &::after {
     position: absolute;
@@ -105,11 +114,11 @@ export const A = styled.a`
 `;
 export const Wrapper = styled.div`
   position: fixed;
-//   margin: -13px 0 0 0;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100vh;
+  overflow: hidden;
 //   background: linear-gradient(-135deg, #c850c0, #4158d0);
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   clip-path: circle(25px at calc(100% - 105px) 45px);

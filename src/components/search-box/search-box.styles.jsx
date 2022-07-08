@@ -1,16 +1,13 @@
 import styled from "styled-components";
 
 export const SearchFormContainer = styled.div`
-  width: 90%;
-  // top: 20px;
-  // left: 10rem;
+  width: 100%;
   box-sizing: border-box;
   position: absolute;
   background: none;
-  // opacity: 0.8;
-  // border: 2px solid #000;
   border-radius: none;
-  padding: 20px 10px 20px 0px;
+  // padding: 20px 10px 20px 0px;
+  
 
   @media screen and (max-width: 950px) {
     // left: 5rem;
@@ -28,8 +25,9 @@ export const SearchFormContainer = styled.div`
 `;
 
 export const SearchForm = styled.form`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  grid-gap: 0px;
   align-items: center;
   list-style: none;
   width: 100%;
@@ -44,11 +42,11 @@ export const SearchForm = styled.form`
 
 export const Input = styled.input`
   width: 100%;
-  height: 100%;
+  height: 65px;
   background: #fff;
   color: #000000;
   cursor: pointer;
-  border: 2px solid #000;
+  border: 1px solid #000;
   // border: none;
   padding: 1.3rem;
   border-radius: none;
@@ -58,20 +56,20 @@ export const Input = styled.input`
   text-transform: capitalize;
   outline: none;
   transition: all .5s ease-in-out; 
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   &::placeholder {
     color: #000;
     font-family: Euclid;
     font-size: 16px;
     font-weight: 800;
+    text-align: left;
   }
 
   &:focus {
     background: Transparent;
     color: #000;
-    // padding: 1.6rem;
-    // transform: scale(1.0);
+    text-align: left;
   }
 
   @media screen and (max-width: 800px) {
@@ -83,6 +81,8 @@ export const Input = styled.input`
 
 export const ButtonInSearch = styled.button`
   width: 100%;
+  height: 65px;
+  padding: 7px 0;
 
   @media screen and (max-width: 800px) {
     width: 100%;

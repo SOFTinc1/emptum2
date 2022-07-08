@@ -4,7 +4,8 @@ input[type="checkbox"] {
 
 #active:checked ~ .wrapper {
   clip-path: circle(75%);
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  background: #000;
   z-index: 1;
 }
 
