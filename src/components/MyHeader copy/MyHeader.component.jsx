@@ -46,20 +46,23 @@ const MyHeader = ({ currentUser, hidden }) => {
             <Ul>
               <Li>
                 {currentUser ? (
-                  <A onClick={() => auth.signOut()}>
+                  <A class="a" onClick={() => auth.signOut()}>
                     {currentUser.displayName}
                   </A>
                 ) : (
-                  <A class="a" to="/signin">
+                  <A class="a" onClick={() => {navigate("/signin");}}>
                     <Sup>01</Sup> sign in
                   </A>
                 )}
               </Li>
               <Li>
-                <A to="/signup"><Sup>04</Sup> sign up</A>
+                <A class="a" onClick={() => {navigate("/shop");}}> <Sup>02</Sup> shop</A>
               </Li>
               <Li>
-                <A to="/shop"> <Sup>02</Sup> shop</A>
+                <A class="a"> <Sup>03</Sup> about</A>
+              </Li>
+              <Li>
+                <A class="a" onClick={() => {navigate("/signin");}}><Sup>04</Sup> last</A>
               </Li>
             </Ul>
           </Wrapper>

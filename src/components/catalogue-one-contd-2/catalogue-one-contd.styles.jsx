@@ -2,7 +2,7 @@ import styled from "styled-components";
 // import Bg from "../../assets/images/b.jpg";
 
 export const CatalogueOneContdContainer = styled.div`
-  width: 100vw;
+  width: 100%;
   background: #FBFBFB;
   background-size: cover;
 
@@ -24,6 +24,7 @@ export const Row = styled.div`
 export const Flex = styled.div`
   display: flex;
   flex-direction: column;
+  // border-left: 1px solid #aaa;
 `;
 export const Col4 = styled.div`
   

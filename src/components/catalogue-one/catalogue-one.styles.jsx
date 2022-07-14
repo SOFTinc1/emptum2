@@ -10,6 +10,7 @@ export const CatalogueOneContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     padding: 50px 45px;
+    width: 100vw;
   }
 `;
 export const Row = styled.div`
@@ -37,7 +38,10 @@ export const Categories = styled.h1`
   text-transform: capitalize;
   font-family: Syne;
   text-align: center;
-  color: #fff;
+  color: #000;
+  background: linear-gradient(45deg, #ff80ab, #82b1ff);
+  width: 20%;
+  margin: -100px 0 0 400px;
 `;
 export const InnerFlex = styled.div`
   margin: 80px 0 0 -380px;
@@ -86,10 +90,18 @@ export const H1 = styled.h1`
   }
 `;
 export const Price = styled.div`
-  font-family: euclid;
+  // font-family: euclid;
   text-align: center;
   font-weight: 800;
-  padding: 0 0 20px 0;
+  border-top: 2px solid #ff80ab;
+  border-right: 2px solid #82b1ff;
+  border-bottom: 2px solid #ff80ab;
+  border-left: 2px solid #82b1ff;
+  border-radius: 100%;
+  width: 22%;
+  font-family: Syne;
+  margin: 20px auto;
+  font-size: 30px;
 
   @media screen and (max-width: 800px) {
     font-size: 28px;

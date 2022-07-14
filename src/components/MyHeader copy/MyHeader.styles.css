@@ -4,12 +4,13 @@ input[type="checkbox"] {
 
 #active:checked ~ .wrapper {
   clip-path: circle(75%);
-  background: linear-gradient(45deg, #ff80ab, #82b1ff);;
-  z-index: 1;
+  /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
+  background: #000;
+  /* z-index: 1; */
 }
 
 #active:checked ~ .wrapper::after {
-  display: none;
+   display: none;
 }
 
 #active:checked ~ .menu-btn {
@@ -31,7 +32,7 @@ input[type="checkbox"] {
   line-height: 50px;
   border-radius: 50%;
   font-size: 20px;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

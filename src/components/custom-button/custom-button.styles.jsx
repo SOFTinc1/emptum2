@@ -3,13 +3,15 @@ import styled, { css } from "styled-components";
 const ButtonStyles = css`
   background-color: #000;
   color: #fff;
+  font-weight: 800;
   border: none;
   transition: all .7s ease-in-out; 
 
   &:hover {
-    background-color: #fff;
+    background: linear-gradient(45deg, #ff80ab, #82b1ff);
     color: #000;
-    border: 1px solid #000;
+    
+    // border: 1px solid #000;
     transform: scale(1.0);
   }
 `;
@@ -21,7 +23,7 @@ const InvertedButtonStyles = css`
   transition: all .7s ease-in-out; 
 
   &:hover {
-    background-color: black;
+    background: linear-gradient(45deg, #ff80ab, #82b1ff);
     color: white;
     border: none;
     transform: scale(1.0);
@@ -35,7 +37,7 @@ const GoogleSignInStyles = css`
   transition: all .7s ease-in-out; 
 
   &:hover {
-    background-color: #357ae8;
+    background-color: linear-gradient(45deg, #ff80ab, #82b1ff);
     border: none;
     transform: scale(1.0);
   }

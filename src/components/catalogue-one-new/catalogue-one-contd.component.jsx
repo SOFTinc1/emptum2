@@ -20,10 +20,10 @@ import Slide from "react-reveal/Slide";
 
 const CatalogueOneNew = () => (
   <CatalogueOneContdContainer>
-    <Slide bottom>
+    <Slide left>
       <H1>discover your beautiful, choose your preffered fashion accessory</H1>
     </Slide>
-    <Slide top>
+    <Slide right>
       <Row>
         <Col1>
           <H2>mens</H2>

@@ -3,7 +3,7 @@ import Bg from "../../assets/images/b.jpg";
 
 export const CatalogueOneContdContainer = styled.div`
   width: 100vw;
-  // background: #424242;
+  background: #F5F5F5;
   background-size: cover;
 
   @media screen and (max-width: 800px) {
@@ -19,7 +19,7 @@ export const H1 = styled.h1`
   color: #000;
 
   @media screen and (max-width: 800px) {
-    padding: 20px 10px 20px 0;
+    padding: 20px 0;
     font-size: 20px;
   }
 `;
@@ -51,8 +51,8 @@ export const Col2 = styled.div`
   }
 `;
 export const Col3 = styled.div`
-  background: #424242;
-  color: #fff;
+  background: linear-gradient(45deg, #ff80ab, #82b1ff);
+  color: #000;
 `;
 export const Col4 = styled.div`
   background: url(${Bg});
@@ -72,7 +72,7 @@ export const Col5 = styled.div`
   height: 200px;
  
   @media screen and (max-width: 800px) {
-    height: 300px;
+    height: 330px;
     border: 1px solid #aaa;
   }
 `;
@@ -81,7 +81,7 @@ export const Col6 = styled.div`
   height: 200px;
 
   @media screen and (max-width: 800px) {
-    height: 300px;
+    height: 330px;
     border: 1px solid #aaa;
   }
 `;

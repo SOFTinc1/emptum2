@@ -20,14 +20,6 @@ const CatalogueOne = () => (
       <Col1>
         <InnerFlex>
           <Categories>mens</Categories>
-          <hr style={{ width: "20%", background: "#000" }}/>
-          <Categories>womens</Categories>
-          <hr style={{ width: "20%" }}/>
-          <Categories>jacket</Categories>
-          <hr style={{ width: "20%" }}/>
-          <Categories>hats</Categories>
-          <hr style={{ width: "20%" }}/>
-          <Categories>sneakers</Categories>
         </InnerFlex>
       </Col1>
       <Col2>

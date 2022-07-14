@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 export const MyHeaderContainer = styled.div`
   margin: 0;
@@ -13,23 +12,12 @@ export const MyHeaderContainer = styled.div`
 export const LogoH1 = styled.h1`
   width: 100%;
   margin: 0;
-  text-transform: lowercase;
-  background-color: transparent;
-  background-image: linear-gradient(25deg,#000, #ff80ab, #82b1ff);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  margin: 0;
-  font-family: NewYork;
-  font-weight: 800;
+  font-family: Syne;
+  font-weight: 400;
   cursor: pointer;
 
   @media screen and (max-width: 800px) {
     margin: 10px 0 0 0;
-    font-size: 23px;
-    font-weight: 800;
   }
 `;
 export const Row = styled.div`
@@ -39,7 +27,7 @@ export const Row = styled.div`
 
   @media screen and (max-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1.1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
 `;
@@ -88,13 +76,13 @@ export const Sup = styled.sup`
 export const Li = styled.li`
   margin: 15px 0;
 `;
-export const A = styled(Link)`
+export const A = styled.a`
   color: none;
   text-decoration: none;
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 3px;
-  color: #000;
+  color: #fff;
   position: relative;
   line-height: 100px;
   transition: all 0.3s ease;
@@ -130,9 +118,11 @@ export const Wrapper = styled.div`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+//   background: linear-gradient(-135deg, #c850c0, #4158d0);
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
   clip-path: circle(25px at calc(100% - 105px) 45px);
   transition: all 0.3s ease-in-out;
+  z-index: 1;x
 
   @media screen and (max-width: 800px) {
     clip-path: circle(25px at calc(100% - 37px) 45px);

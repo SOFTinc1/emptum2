@@ -4,25 +4,16 @@ import {
   H1,
   Col1,
   P,
-  Search,
   Span
 } from "./homepage-banner.styles";
 import "./a.css";
-// import Image1 from "../../assets/images/b.jpg";
 import Slide from "react-reveal/Slide";
-import SearchBox from "../search-box/search-box.components";
 
 const HomepageBanner = () => (
   <HomepageBanner2Container>
     <Slide left>
       <Col1 id="scroll-container">
-        <H1>unleash your <Span>ravishing</Span> within-g</H1>
-        <P id="scroll-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae deleniti
-          minus libero nostrum autem accusamus omnis fugit recusandae iste
-          eaque.
-        </P>
-        <Search as={SearchBox} />
+        <H1>unleash your <Span>ravishing</Span> within-g <br />move foward with your ravishness </H1>
       </Col1>
     </Slide>
   </HomepageBanner2Container>

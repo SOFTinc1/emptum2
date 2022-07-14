@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CatalogueOneContdContainer = styled.div`
   width: 100vw;
-  background: #FBFBFB;
+  background: #F5F5F5;
   background-size: cover;
 
   @media screen and (max-width: 800px) {
@@ -18,7 +18,7 @@ export const H1 = styled.h1`
   color: #000;
 
   @media screen and (max-width: 800px) {
-    padding: 20px 10px 20px 0;
+    padding: 20px 0 10px 20px;
     font-size: 20px;
   }
 `;
@@ -36,7 +36,7 @@ export const Col1 = styled.div`
   height: 200px;
 
   @media screen and (max-width: 800px) {
-    height: 250px;
+    height: 260px;
   }
 `;
 export const Col2 = styled.div`
@@ -46,8 +46,8 @@ export const Col2 = styled.div`
   border-left: none;
 `;
 export const Col3 = styled.div`
-  background: #424242;
-  color: #fff;
+  background: linear-gradient(45deg, #ff80ab, #82b1ff);
+  color: #000;
 `;
 export const H2 = styled.h1`
   Padding: 0 20px;
@@ -55,7 +55,8 @@ export const H2 = styled.h1`
   font-size: 15px;
 
   @media screen and (max-width: 800px) {
-    padding: 10px 0 0 0;
+    padding: 10px 0 0 10px;
+    font-size: 20px;
   }
 `;
 export const P = styled.p`

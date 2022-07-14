@@ -1,65 +1,44 @@
 import styled from "styled-components";
 
 export const HomepageBanner2Container = styled.div`
-  width: 100vw;
-  padding: 10px 30px;
-  height: 100vh;
-  background: linear-gradient(to right, #e3f2fd28 20%, #fffde72c 50%);
+  width: 100%;
+  padding: 80px 30px;
+  background: #F5F5F5;
 
   @media screen and (max-width: 800px) {
-    padding: 30px 10px 770px 10px;
-    height: 100vh;
+    padding: 50px 0;
+    height: 100%;
   }
 `;
-// export const Row = styled.div`
-//   // display: grid;
-//   // grid-template-columns: 2fr 3fr;
-//   // grid-gap: 10px;
-
-//   @media screen and (max-width: 800px) {
-//     display: flex;
-//     flex-direction: column;
-//   }
-// `;
 
 export const Col1 = styled.div`
-  // background: linear-gradient(rgba(22, 72, 255, 0.192), rgba(255, 183, 0, 0.219));
-
   @media screen and (max-width: 800px) {
   }
 `;
 
-// export const Col2 = styled.div`
-//   @media screen and (max-width: 800px) {
-//   }
-// `;
-
-// export const ImageSrc = styled.img`
-//   width: 100%;
-//   height: 100vh;
-
-//   @media screen and (max-width: 800px) {
-//     display: block;
-//     width: 55%;
-//     height: 300px;
-//     margin: 0 0 0 -5px;
-//   }
-// `;
 export const H1 = styled.h1`
   font-family: Syne;
-  font-style: ExtraBold;
   font-size: 83px;
-  line-height: 58px;
-  line-height: 100%;
+  color: #fff;
+  text-align: center;
   text-transform: lowercase;
-  vertical-align: Top;
   letter-spacing: 4px;
-  margin: 30px 0 0 0;
-  transform: scale(1, 2);
+  text-transform: lowercase;
+  background-color: transparent;
+  background-image: linear-gradient(45deg, #000, #ff80ab, #82b1ff);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 80px;
+  margin: 0;
+  font-family: Syne;
+  // transform: scale(1, 2);
   font-stretch: ultra-condensed // transform: translateX(100%);
-    // -moz-animation: my-animation 15s linear infinite;
-    // -webkit-animation: my-animation 15s linear infinite;
-    // animation: my-animation 5s linear infinite slide;
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 5s linear infinite slide;
     @keyframes my-animation {
     from {
       -moz-transform: translateX(100%);
@@ -77,17 +56,19 @@ export const H1 = styled.h1`
     text-transform: lowercase;
     letter-spacing: 10px;
     font-weight: 800;
-    text-align: left;
-    font-size: 50px;
-    margin: 100px 0 50px 0;
-    transform: scale(1, 2.2);
-    text-align: center;
+    font-size: 40px;
+    width: 100%;
   }
 `;
 
 export const Span = styled.span`
-  border: 2px solid #0D47A1;
+  border-top: 2px solid #ff80ab;
+  border-right: 2px solid #82b1ff;
+  border-bottom: 2px solid #ff80ab;
+  border-left: 2px solid #82b1ff;
   border-radius: 100%;
+  width: 20%;
+  font-family: Syne;
 `;
 
 export const P = styled.p`
