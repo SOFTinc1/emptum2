@@ -4,7 +4,7 @@ import ImageS from "../../assets/images/POTRAIT.jpg";
 
 export const CatalogueOneContainer = styled.div`
   width: 100vw;
-  padding: 50px 350px;
+  padding: 50px 80px;
   background: #424242;
   background-size: cover;
 
@@ -15,7 +15,7 @@ export const CatalogueOneContainer = styled.div`
 `;
 export const Row = styled.div`
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 0px;
 
   @media screen and (max-width: 800px) {
@@ -24,14 +24,33 @@ export const Row = styled.div`
   }
 `;
 export const Col1 = styled.div`
-  background: url(${ImageS});
-  background-size: cover;
-  height: 80vh;
-  transform: rotate(-5deg);
+  // transform: rotate(-5deg);
 
   @media screen and (max-width: 800px) {
     // padding: 0 0 0 20px;
   }
+`;
+
+export const CarouselContainer = styled.div`
+  width: 100%;
+  height: 500px;
+  // margin: 105rem 0 0 0;
+  // position: absolute;
+
+  @media screen and (max-width: 800px) {
+    margin: 70rem 0 0 0;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  width: 100%;
+  // height: 50%;
+  //   background: rgba(135, 13, 165, 0.63);
+`;
+export const ImageSrc = styled.img`
+  width: 70%;
+  height: 510px;
+  margin: 0 0 0 200px;
 `;
 export const Categories = styled.h1`
   font-size: 35px;

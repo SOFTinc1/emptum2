@@ -1,6 +1,5 @@
 import React from "react";
 import { HomepageContainer } from "./homepage.styles";
-// import MyHeader from "../../components/MyHeader/MyHeader.component";
 import Directory from "../../components/directory/directory.component";
 import HomeBanner from "../../components/home-banner/home-banner.component";
 import HomepageBanner from "../../components/hompage-banner/homepage-banner.component";
@@ -14,7 +13,6 @@ import CatalogueOneNew from "../../components/catalogue-one-new/catalogue-one-co
 
 const Homepage = () => (
   <HomepageContainer>
-    {/* <MyHeader /> */}
     <HomeBanner />
     <Directory />
     {/* <HomepageBanner /> */}
