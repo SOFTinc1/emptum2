@@ -5,9 +5,10 @@ export const CollectionPreviewContainer = styled.div`
   flex-direction: column;
   margin-bottom: 30px;
   padding: 0 1rem;
+  width: 100%;
 
   @media screen and (max-width: 800px) {
-    padding: 0 10px ;
+    padding: 0 8px ;
   }
 `;
 export const Title = styled.div`
@@ -22,7 +23,7 @@ export const Preview = styled.div`
   @media screen and (max-width: 800px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 10px;
     align-items: center;
   }
 `;

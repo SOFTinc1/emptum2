@@ -7,15 +7,16 @@ export const CartItemProper = styled.div`
   height: 80px;
   margin-bottom: 15px;
   background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  border-radius: 3px;
+  border-radius: 5px;
+  border: 2px solid #aaa;
+  // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   // background: linear-gradient(45deg, #ff80ab, #82b1ff);
 `;
 export const ImgSrc = styled.img`
   width: 30%;
   height: 80%;
   margin: 8px 0 0 5px;
-  border-radius: 3px;
+  // border-radius: 3px;
   // border-top: 2px solid #000;
   // border-left: 2px solid #000;
   // border-bottom: 2px solid #000;

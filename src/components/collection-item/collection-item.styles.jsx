@@ -31,6 +31,11 @@ export const Image = styled.img`
   background-position: center;
   margin-bottom: 5px;
   border: 2px solid #000;
+  padding: 0 148px;
+
+  @media screen and (max-width: 800px) {
+    padding: 2px 85px;
+  }
 `;
 
 export const AddButton = styled.button`
@@ -54,9 +59,8 @@ export const AddButton = styled.button`
 
   @media screen and (max-width: 800px) {
     display: block;
-    opacity: 0.9;
-    min-width: unset;
-    padding: 0 10px;
+    padding: 2px 13px;
+    border: 2px solid #000;
   }
 `;
 
@@ -64,12 +68,13 @@ export const CollectionFooter = styled.div`
   width: 100%;
   font-size: 18px;
   display: grid;
-  grid-template-columns: 6fr 2fr;
+  grid-template-columns: 8fr 2fr;
   grid-gap: 0px;
   border-top: 2px solid #000;
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
+  // border-radius: 3px;
 `;
 
 export const Flex = styled.div`
@@ -79,6 +84,7 @@ export const Flex = styled.div`
   border-bottom: none;
   border-right: none;
   border-top: none;
+  border-radius: 3px;
   border-radius: 0px;
 `;
 
@@ -101,6 +107,6 @@ export const FooterPrice = styled.span`
   height: 40px;
   font-family: "Euclid";
   text-align: center;
-  border-top: 1px solid #aaa;
+  border-top: 1px solid #000;
   font-weight: 800;
 `;

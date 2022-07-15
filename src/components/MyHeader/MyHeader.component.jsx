@@ -56,10 +56,10 @@ const MyHeader = ({ currentUser, hidden }) => {
                 )}
               </Li>
               <Li>
-                <A to="/signup"><Sup>04</Sup> sign up</A>
+                <A to="/signup"><Sup>02</Sup> sign up</A>
               </Li>
               <Li>
-                <A to="/shop"> <Sup>02</Sup> shop</A>
+                <A to="/shop"> <Sup>03</Sup> shop</A>
               </Li>
             </Ul>
           </Wrapper>

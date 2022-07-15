@@ -7,12 +7,13 @@ export const CartDropdownContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 20px;
-  border-radius: 4px;
-  background: linear-gradient(45deg, #ff80ab, #82b1ff);
+  border-radius: 5px;
+  background: #fff;
   top: 90px;
   left: 40px;
   z-index: 5;
-  // border: 1px solid black;
+  border: 2px solid #aaa;
+  // background: linear-gradient(45deg, #ff80ab, #82b1ff);
 
   button {
     margin-top: auto;
@@ -23,12 +24,12 @@ export const CartItems = styled.div`
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
-  -ms-overflow-style: none;
-  scrollbar-width: none;  
+  // -ms-overflow-style: none;
+  // scrollbar-width: none;  
 
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  // &::-webkit-scrollbar {
+  //   display: none;
+  // }
 `;
 export const EmptyMessage = styled.div`
   font-size: 18px;
