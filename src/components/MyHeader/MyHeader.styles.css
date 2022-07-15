@@ -6,6 +6,7 @@ input[type="checkbox"] {
   clip-path: circle(75%);
   background: linear-gradient(45deg, #ff80ab, #82b1ff);;
   z-index: 1;
+  width: 100%;
 }
 
 #active:checked ~ .wrapper::after {

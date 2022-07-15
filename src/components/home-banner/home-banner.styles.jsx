@@ -4,6 +4,7 @@ import CustomButton from "../custom-button/custom-button.component";
 export const HomeBannerContainer = styled.div`
   padding: 20px 80px;
   background: linear-gradient(to right, #e3f2fd28 20%, #fffde72c 50%);
+  // background: #000;
   width: 100%;
 
   @media screen and (max-width: 800px) {
@@ -27,13 +28,14 @@ export const Heading = styled.h1`
   font-family: Syne;
   font-size: 80px;
   font-weight: 800;
-  margin: 0;
+  margin: 0 0 0 80px;
   color: #000;
   text-transform: capitalize;
 
   @media screen and (max-width: 800px) {
     font-size: 55px;
     text-align: center;
+    margin: 0;
   }
 `;
 export const Span = styled.span`
@@ -76,7 +78,7 @@ export const Span2 = styled.h1`
   }
 `;
 export const Price = styled.h1`
-  margin: 0;
+  margin: 0 0 0 80px;
   font-size: 50px;
   border-top: 2px solid #ff80ab;
   border-right: 2px solid #82b1ff;
@@ -95,22 +97,27 @@ export const Price = styled.h1`
 export const Par = styled.p`
   width: 400px;
   font-family: Syne;
+  margin: 10px 0 0 80px;
 
   @media screen and (max-width: 800px) {
     font-size: 15px;
     font-weight: 800;
     width: 100%;
     text-align: center;
+    margin: 0;
   }
 `;
 export const CustomButtonDiv = styled(CustomButton)`
-@media screen and (max-width: 800px) {
-  margin: 20px auto;
-}
+  margin: 10px 0 0 80px;
+
+  @media screen and (max-width: 800px) {
+    margin: 20px auto;
+  }
 `;
 export const Col2 = styled.div``;
 export const Image = styled.img`
   width: 100%;
+  margin: 0 0 0 -80px;
   
   @media screen and (max-width: 800px) {
     margin: 0 0 0 -20px;

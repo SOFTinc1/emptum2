@@ -50,7 +50,7 @@ const MyHeader = ({ currentUser, hidden }) => {
                     {currentUser.displayName}
                   </A>
                 ) : (
-                  <A class="a" to="/signin">
+                  <A to="/signin">
                     <Sup>01</Sup> sign in
                   </A>
                 )}

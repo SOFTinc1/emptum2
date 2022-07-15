@@ -6,6 +6,7 @@ import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
 
 
+// import Header from "./components/header/header.component";
 import MyHeader from "./components/MyHeader/MyHeader.component";
 import Homepage from "./pages/homepage/homepage.component";
 import SignInPage from "./pages/sign-in/signin-page";
@@ -55,6 +56,7 @@ class App extends React.Component {
       <div>
         <GlobalStyle />
         <MyHeader />
+        {/* <Header/> */}
         <Routes>
           <Route exact path="/" element={<Homepage />} />
 

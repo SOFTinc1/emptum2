@@ -4,10 +4,11 @@ import { Link } from "react-router-dom";
 export const MyHeaderContainer = styled.div`
   margin: 0;
   padding: 10px 30px;
-  width: 100%;
+  width: 100vw;
 
   @media screen and (max-width: 800px) {
     padding: 10px;
+    width: 100%;
   }
 `;
 export const LogoH1 = styled.h1`
@@ -15,20 +16,18 @@ export const LogoH1 = styled.h1`
   margin: 0;
   text-transform: lowercase;
   background-color: transparent;
-  background-image: linear-gradient(25deg,#000, #ff80ab, #82b1ff);
-  background-size: 100%;
+  background-image: linear-gradient(35deg,#000, #ff80ab, #82b1ff);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  margin: 0;
   font-family: NewYork;
   font-weight: 800;
   cursor: pointer;
 
   @media screen and (max-width: 800px) {
     margin: 10px 0 0 0;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 800;
   }
 `;
@@ -39,7 +38,7 @@ export const Row = styled.div`
 
   @media screen and (max-width: 800px) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1.1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
   }
 `;
@@ -48,7 +47,7 @@ export const Col1 = styled.div`
   padding: 0;
 
   @media screen and (max-width: 800px) {
-    margin: 0 0 0 -0px;
+    margin: 0;
   }
 `;
 export const Col2 = styled.div`
@@ -73,6 +72,7 @@ export const ImageSrc = styled.img`
 export const Ul = styled.ul`
   position: absolute;
   top: 10%;
+  list-style-type: none;
   // left: 50%;
   // text-align: left;
   // transform: translate(-50%, -50%);
