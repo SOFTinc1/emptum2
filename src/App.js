@@ -39,7 +39,7 @@ class App extends React.Component {
     this.onSubsceribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
-
+        
         userRef.onSnapshot((snapShot) => {
           setCurrentUser({
             id: snapShot.id,
@@ -48,6 +48,7 @@ class App extends React.Component {
         });
       }
       setCurrentUser(userAuth);
+      this.setState({ loading: false });
     });
   }
 
