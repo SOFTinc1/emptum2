@@ -16,6 +16,7 @@ import CheckoutPage from "./pages/checkout/checkout.component";
 import CollectionsOverview from "./components/collections-overview/collections-overview.component";
 import CollectionPage from "./pages/collection/collection.component";
 import Footer from "./components/footer/footer.component";
+import WithSpinner from "./components/with-spinner/with-spinner.components";
 
 import { GlobalStyle } from "./components/global.styles";
 
@@ -23,11 +24,14 @@ import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors";
 
 import { auth, createUserProfileDocument } from "./firebase/firebase.utils";
-
 // import { selectCollectionsForPreview } from "./redux/shop/shop.selectors";
+const HomepageWithSpinner = WithSpinner(Homepage);
 
 
 class App extends React.Component {
+  state = {
+    loading: true,
+  };
   unSubscribeFromAuth = null;
 
   componentDidMount() {
@@ -52,13 +56,14 @@ class App extends React.Component {
   }
 
   render() {
+    const { loading } = this.state;
     return (
       <div>
         <GlobalStyle />
         <MyHeader />
         {/* <Header/> */}
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/" element={<HomepageWithSpinner isLoading={loading} />} />
 
           <Route path="/shop/" element={<ShopPage />}>
             <Route index element={<CollectionsOverview />} />

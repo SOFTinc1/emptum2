@@ -10,6 +10,8 @@ import CatalogueOneContd from "../../components/catalogue-one-contd/catalogue-on
 import CatalogueOneContd2 from "../../components/catalogue-one-contd-2/catalogue-one-contd.component";
 import CatalogueOneNew from "../../components/catalogue-one-new/catalogue-one-contd.component";
 
+
+
 const Homepage = () => (
   <HomepageContainer>
     {/* <MyHeader /> */}
