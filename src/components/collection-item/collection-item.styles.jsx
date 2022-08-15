@@ -30,8 +30,9 @@ export const Image = styled.img`
   background-size: cover;
   background-position: center;
   margin-bottom: 5px;
-  border: 2px solid #000;
-  padding: 0 148px;
+  border: 1px solid #000;
+  padding: 0 149px;
+  border-radius: 4px;
 
   @media screen and (max-width: 800px) {
     padding: 2px 85px;
@@ -42,7 +43,7 @@ export const AddButton = styled.button`
   width: 100%;
   padding: 10px 0;
   height: 40px;
-  background: #000;
+  background: #424242;
   border: none;
   color: #fff;
   font-family: Syne;
@@ -74,7 +75,7 @@ export const CollectionFooter = styled.div`
   border-right: 2px solid #000;
   border-bottom: 2px solid #000;
   border-left: 2px solid #000;
-  // border-radius: 3px;
+  border-radius: 3px;
 `;
 
 export const Flex = styled.div`
@@ -90,10 +91,11 @@ export const Flex = styled.div`
 
 export const FooterName = styled.span`
   width: 100%;
-  font-family: "Euclid";
+  font-family: syne;
   text-align: left;
   margin: 15px 0 0 10px;
   font-size: 22px;
+  font-weight: 800;
 
   @media screen and (max-width: 800px) {
     font-size: 15px;
@@ -105,7 +107,7 @@ export const FooterPrice = styled.span`
   width: 100%;
   padding: 10px 0;
   height: 40px;
-  font-family: "Euclid";
+  font-family: syne;
   text-align: center;
   border-top: 1px solid #000;
   font-weight: 800;

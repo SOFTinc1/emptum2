@@ -6,6 +6,7 @@ const OptionContainerStyles = css`
   font-weight: 800;
   letter-spacing: 0.1rem;
   cursor: pointer;
+  font-family: typo;
 `;
 
 export const HeaderContainer = styled.div`
@@ -68,14 +69,14 @@ export const OptionsContainer = styled.div`
 
 export const OptionLink = styled(Link)`
   ${OptionContainerStyles}
+
+
+  &:hover {
+    color: #000;
+  }
 `;
 
 export const OptionDiv = styled.div`
   ${OptionContainerStyles}
   text-transform: capitalize;
 `;
-
-// export const ProfileDetails = styled.select`
-// ${OptionContainerStyles}
-// text-transform: capitalize;
-// `;

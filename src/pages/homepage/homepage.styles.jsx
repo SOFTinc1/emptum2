@@ -4,8 +4,6 @@ export const HomepageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100%;
-  // color: rgba(255, 255, 255, 0);
-  // padding: 20px 80px;
 `;

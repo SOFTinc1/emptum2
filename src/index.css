@@ -1,21 +1,16 @@
 @font-face {
-  font-family: "Euclid";
-  src: local("Euclid"), url(./fonts/euclid/Euclid\ Circular\ A\ Regular.ttf) format("truetype");
-}
-
-@font-face {
   font-family: 'Syne';
   src: local('Syne'), url(./fonts/syne/Syne-Regular.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Elipses';
-  src: local('Elipses'), url(./fonts/ElipsesCaps.ttf) format('truetype');
+  font-family: 'typo';
+  src: local('typo'), url(./fonts/typo-grotesk-thin.otf) format('truetype');
 }
 
 body {
   margin: 0;
-  font-family: "Syne", "Euclid";
+  font-family: "Syne", "typo";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 

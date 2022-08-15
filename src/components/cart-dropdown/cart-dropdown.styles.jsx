@@ -10,10 +10,13 @@ export const CartDropdownContainer = styled.div`
   border-radius: 5px;
   background: #fff;
   top: 90px;
-  left: 40px;
-  z-index: 5;
+  right: 40px;
+  z-index: 9;
+  transition: all 0.9s ease-in-out;
+  transform: scale(1.1);
+  background: #f9fbfb;
   border: 2px solid #aaa;
-  // background: linear-gradient(45deg, #ff80ab, #82b1ff);
+  font-family: syne;
 
   button {
     margin-top: auto;
@@ -23,9 +26,9 @@ export const CartItems = styled.div`
   height: 240px;
   display: flex;
   flex-direction: column;
+  overflow-x: none;
   overflow-y: scroll;
-  // -ms-overflow-style: none;
-  // scrollbar-width: none;  
+  font-family: syne;
 
   // &::-webkit-scrollbar {
   //   display: none;
@@ -35,4 +38,5 @@ export const EmptyMessage = styled.div`
   font-size: 18px;
   margin: 50px auto;
   text-transform: capitalize;
+  font-family: syne;
 `;

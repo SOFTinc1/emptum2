@@ -1,7 +1,7 @@
 import React from "react";
 import "./menu-item.styles.scss";
 import { withRouter } from "../directory/withRouter";
-// import CustomButton from "../custom-button/custom-button.component";
+import CustomButton from "../custom-button/custom-button.component";
 // import { Navigate } from "react-router-dom";
 
 
@@ -16,7 +16,8 @@ const MenuItem = ({ title, imageUrl, size, history, navigate, linkUrl, match}) =
         />
         <div className="content">
             <h1 className="title">{ title }</h1>
-            <span className="subtitle" onClick={() => {navigate(linkUrl)}} >shop now</span>
+            {/* <span className="subtitle" onClick={() => {navigate(linkUrl)}}>shop now</span> */}
+            <CustomButton onClick={() => {navigate(linkUrl)}}>shop now</CustomButton>
         </div>
     </div>
 )

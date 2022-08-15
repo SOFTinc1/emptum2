@@ -12,6 +12,7 @@ import {
   Li,
   A,
   LogoH1,
+  DarkModeC,
   Sup
 } from "./MyHeader.styles";
 import "./MyHeader.styles.css";
@@ -22,8 +23,8 @@ import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 import { createStructuredSelector } from "reselect";
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
-// import LogoImg from "../../assets/images/emptum.svg";
 import Image1 from "../../assets/images/menu.svg";
+
 
 const MyHeader = ({ currentUser, hidden }) => {
   let navigate = useNavigate();
@@ -36,6 +37,7 @@ const MyHeader = ({ currentUser, hidden }) => {
         <Col2>
           {/* <Logo src={LogoImg} /> */}
           <LogoH1 onClick={() => {navigate("/");}}>emptum.</LogoH1>
+          <DarkModeC />
         </Col2>
         <Col3>
           <input type="checkbox" id="active"></input>

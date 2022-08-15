@@ -1,17 +1,15 @@
 import styled, { css } from "styled-components";
 
 const ButtonStyles = css`
-  background-color: #000;
+  background-color: #7E57C2;
   color: #fff;
-  font-weight: 800;
   border: none;
-  transition: all .7s ease-in-out; 
+  transition: all .7s ease-in-out;
+  border-radius: 32px;
 
   &:hover {
-    background: linear-gradient(45deg, #ff80ab, #82b1ff);
-    color: #000;
-    
-    // border: 1px solid #000;
+    background: #9E9E9E;
+    color: #fff;
     transform: scale(1.0);
   }
 `;
@@ -64,8 +62,8 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   display: flex;
   justify-content: center;
-  font-family: euclid;
-  text-transform: capitalize;
+  font-family: syne;
+  text-transform: lowercase;
 
   ${getButtonStyles}
 `;

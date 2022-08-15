@@ -8,9 +8,7 @@ export const CartItemProper = styled.div`
   margin-bottom: 15px;
   background: #fff;
   border-radius: 5px;
-  border: 2px solid #aaa;
-  // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  // background: linear-gradient(45deg, #ff80ab, #82b1ff);
+  // border: 1px solid #f9fbfb;
 `;
 export const ImgSrc = styled.img`
   width: 30%;
@@ -27,19 +25,18 @@ export const ItemDetails = styled.div`
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  // padding: 10px 20px;
-  // border: 2px solid #000;
+  
 `;
 export const Name = styled.span`
   font-size: 16px;
   margin: 15px 0 0 10px;
   height: 40px;
-  font-weight: 800;
+  font-weight: 400;
 `;
 export const Price = styled.span`
+  font-size: 13px;
   height: 40px;
   width: 100%;
   font-weight: 800;
   padding: 0 0 0 10px;
-  // border-top: 2px solid #000;
 `;

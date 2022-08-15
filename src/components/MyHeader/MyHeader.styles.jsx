@@ -1,19 +1,29 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import DarkMode from "../../components/DarkMode/DarkMode";
 
 export const MyHeaderContainer = styled.div`
   margin: 0;
   padding: 10px 30px;
   width: 100vw;
+  // background: #000;
 
   @media screen and (max-width: 800px) {
     padding: 10px;
     width: 100%;
   }
 `;
+export const DarkModeC = styled(DarkMode)`
+  margin: -20px 0 0 0;
+  display: block;
+
+  @media screen and (max-width: 800px) {
+    
+  }
+`;
 export const LogoH1 = styled.h1`
   width: 100%;
-  margin: 0;
+  margin: 0 0 0 -100px;
   text-transform: lowercase;
   background-color: transparent;
   background-image: linear-gradient(35deg,#000, #ff80ab, #82b1ff);
@@ -21,9 +31,10 @@ export const LogoH1 = styled.h1`
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
-  font-family: NewYork;
-  font-weight: 800;
+  font-family: syne;
+  font-weight: 400;
   cursor: pointer;
+  font-size: 28px;
 
   @media screen and (max-width: 800px) {
     margin: 10px 0 0 0;
@@ -43,7 +54,7 @@ export const Row = styled.div`
   }
 `;
 export const Col1 = styled.div`
-  margin: 0 0 0 50px;
+  margin: -5px 0 0 50px;
   padding: 0;
 
   @media screen and (max-width: 800px) {
@@ -53,6 +64,9 @@ export const Col1 = styled.div`
 export const Col2 = styled.div`
   margin: 4px 0 0 200px;
   padding: 0;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  grid-gap: 0;
 
   @media screen and (max-width: 800px) {
     margin: 0 0 0 30px;
@@ -67,7 +81,8 @@ export const Col3 = styled.div`
 `;
 export const ImageSrc = styled.img`
   width: 100%;
-  padding: 10px 10px 3px 10px;
+  padding: 0 10px 3px 10px;
+  margin: -5px 0 0 0;
 `;
 export const Ul = styled.ul`
   position: absolute;
@@ -112,6 +127,7 @@ export const A = styled(Link)`
     transform: scaleY(0);
     z-index: -1;
     transition: transform 0.3s ease;
+    text-align: center;
   }
   &:hover::after {
     transform: scaleY(1);
@@ -119,9 +135,9 @@ export const A = styled(Link)`
     width: 50%;
     border-bottom: 2px solid #fff;
   }
-  &:hover {
-    // color: #fff;
-  }
+  // &:hover {
+  //   color: #fff;
+  // }
 `;
 export const Wrapper = styled.div`
   position: fixed;

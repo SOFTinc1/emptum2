@@ -1,13 +1,12 @@
 // import "./App.css";
 import React from "react";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { connect } from "react-redux";
 import { setCurrentUser } from "./redux/user/user.actions";
 
 
-// import Header from "./components/header/header.component";
-import MyHeader from "./components/MyHeader/MyHeader.component";
+import Header from "./components/header/header.component";
 import Homepage from "./pages/homepage/homepage.component";
 import SignInPage from "./pages/sign-in/signin-page";
 import SignUpPage from "./pages/sign-up/signup-page";
@@ -61,8 +60,7 @@ class App extends React.Component {
     return (
       <div>
         <GlobalStyle />
-        <MyHeader />
-        {/* <Header/> */}
+        <Header/>
         <Routes>
           <Route exact path="/" element={<HomepageWithSpinner isLoading={loading} />} />
 

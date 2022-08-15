@@ -1,0 +1,25 @@
+#darkMode {
+  background: transparent url("../../assets/images/brightness-and-contrast.png") no-repeat center;
+  background-size: 30px 30px;
+  width: 45px; 
+  height: 45px;
+  filter: grayscale(100%);
+  border-radius: 50%;
+  margin: -6px 0 0 -100px;
+  border: none;
+  transition: background-color 1s ease-in-out, filter 1s ease-in-out;
+}
+
+#darkMode:hover,
+#darkMode:focus {
+  filter: none;
+  background-color: transparent;
+  cursor: pointer;
+
+}
+
+#darkMode.clicked {
+  filter: none !important;
+  background-color: transparent;
+  /* background: transparent url("../../assets/svg/brightness-and-contrast.png") no-repeat center; */
+}
