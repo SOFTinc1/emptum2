@@ -11,12 +11,19 @@ import {
 const CheckoutPage = ({ cartItems, total }) => (
   <div className="checkout-page">
     <div className="gridThinghs">
-      {cartItems.map((cartItem) => (
-        <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-      ))}
+      <div className="check-list">
+        {cartItems.map((cartItem) => (
+          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+        ))}
+      </div>
+      <div className="total">
+        <span className="delivery">Delivery Fee: FREE</span> <br />
+        <span className="total-span">product price: ${total}</span> <br />
+        <span className="total-span">total: ${total}</span>
+      </div>
     </div>
 
-    <div className="paymentdiv">
+    {/* <div className="paymentdiv">
       <div></div>
       <div className="payment">
         <div className="total">
@@ -25,7 +32,7 @@ const CheckoutPage = ({ cartItems, total }) => (
           <span className="total-span">total: ${total}</span>
         </div>
       </div>
-    </div>
+    </div> */}
   </div>
 );
 

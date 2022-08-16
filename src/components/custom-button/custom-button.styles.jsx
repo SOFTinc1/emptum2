@@ -1,16 +1,18 @@
 import styled, { css } from "styled-components";
 
 const ButtonStyles = css`
-  background-color: #7E57C2;
+  background-color: #c60014;
   color: #fff;
   border: none;
   transition: all .7s ease-in-out;
   border-radius: 32px;
 
+
   &:hover {
     background: #9E9E9E;
-    color: #fff;
+    color: #000;
     transform: scale(1.0);
+    font-weight: 800;
   }
 `;
 
@@ -51,6 +53,7 @@ const getButtonStyles = (props) => {
 
 export const CustomButtonContainer = styled.button`
   // min-width: 165px;
+  // font-weight: 400;
   width: auto;
   height: 50px;
   letter-spacing: 0.5px;
@@ -58,7 +61,6 @@ export const CustomButtonContainer = styled.button`
   padding: 0 15px;
   font-size: 15px;
   text-transform: uppercase;
-  font-weight: 400;
   cursor: pointer;
   display: flex;
   justify-content: center;

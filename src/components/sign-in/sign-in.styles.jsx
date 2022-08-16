@@ -13,44 +13,63 @@ export const SigninContainer = styled.div`
 
   @media screen and (max-width: 800px) {
     width: 100%;
+    height: auto;
+    padding: 0 20px;
   }
 `;
 export const ButtonsBarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin: -40px 0 30px 0;
 
-  // @media screen and (max-width: 800px) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   margin: 0 0 30px 0;
-  // }
+  @media screen and (max-width: 800px) {
+    margin: 0;
+    width: 100%;
+  }
 `;
 export const PasswordExtra = styled.div`
-  display: flex;
   width: 467px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
   padding-bottom: 26px;
-  font-family: Axiforma;
+  font-family: syne;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
   color: #555555;
+  margin: -40px 0 30px 0;
 
-  // @media screen and (max-width: 800px) {
-  //   display: flex;
-  //   flex-direction: column;
-  //   margin: 0 0 30px 0;
-  // }
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: -40px 0 30px 0;
+  }
 `;
-export const ForgetPassword = styled.div`
-  margin -60px 0 0 0;
+export const ForgetPassword = styled.h2`
   color: #000;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 0;
+
+  @media screen and (max-width: 800px) {
+    margin: 0;
+    font-size: 18px;
+  }
 `;
-export const SignUpRedirect = styled.div`
-  margin -60px 0 0 0;
+export const SignUpRedirect = styled.h2`
   text-transform: capitalize;
   color: #aaa;
+  font-size: 18px;
+  margin: 0;
+
+  @media screen and (max-width: 800px) {
+    margin: 0;
+    font-size: 18px;
+  }
 `;
 export const Span = styled(Link)`
   cursor: pointer;
@@ -66,24 +85,23 @@ export const ShowIcon = styled(ShowSvg)`
   cursor: pointer;
   position: relative;
   left: 420px;
-  bottom: 80px;
+  bottom: 88px;
 
-  // @media screen and (max-width: 800px) {
-  //   left: 0;
-  //   bottom: 0;
-  // }
+  @media screen and (max-width: 800px) {
+    left: 300px;
+    bottom: 80px;
+  }
 `;
 export const HideIcon = styled(HideSvg)`
   width: 20px;
   height: 20px;
-
   cursor: pointer;
   position: relative;
   left: 420px;
-  bottom: 80px;
+  bottom: 88px;
 
-  // @media screen and (max-width: 800px) {
-  //   left: 0;
-  //   bottom: 0;
-  // }
+  @media screen and (max-width: 800px) {
+    left: 300px;
+    bottom: 88px;
+  }
 `;

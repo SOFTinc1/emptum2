@@ -1,17 +1,15 @@
 import {
   BannerContainer,
   Head,
-  Gif,
   H1,
   P,
   ImageRow,
   Image1,
-  Image2,
   IntroRow,
   Intro,
   Details,
+  ButtonC
 } from "./banner.styles";
-import phone from "../../assets/images/phone.gif"
 
 const Banner = () => (
   <BannerContainer>
@@ -21,6 +19,7 @@ const Banner = () => (
     <P>
       unless your awesomeness with emptum store, where all things clothing are readilty available with ease of order
     </P>
+    <ButtonC>enter</ButtonC>
     <ImageRow>
       <Image1></Image1>
     </ImageRow>

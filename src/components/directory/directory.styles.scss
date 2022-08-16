@@ -5,10 +5,10 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0.5rem 0 0 0;
+  padding: 0 0 40px 0;
 
   @media screen and (max-width: 800px) {
     width: 100%;
-    padding: 0;
   }
 }
 .inner-row {
@@ -35,6 +35,12 @@
   text-transform: lowercase;
   font-size: 200px;
   padding: 0 10px;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+  }
 }
 .categories-title {
   font-family: "syne";
@@ -43,6 +49,13 @@
   font-size: 50px;
   padding: 0 20px;
   margin: -100px 0 0 0;
+
+  @media screen and (max-width: 800px) {
+    margin: -50px 0 0 0;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
 }
 .categories-details {
   font-family: "typo";
@@ -53,4 +66,10 @@
   font-weight: 800;
   font-size: 16px;
   width: 524px;
+
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    text-align: center;
+    margin: 20px auto 0 auto;
+  }
 }

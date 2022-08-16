@@ -1,11 +1,31 @@
 import React from "react";
-import './footer.styles.scss';
+import { connect } from "react-redux";
+import CartDropdown from "../cart-dropdown/cart-dropdown.component";
 
-const Footer = () => (
-    <div className="footer">
-        {/* <hr /> */}
-        <p>developed by idowu elijah <span>&copy;2022</span> </p>
-    </div>
-)
+import { createStructuredSelector } from "reselect";
+import { selectCartHidden } from "../../redux/cart/cart.selectors";
 
-export default Footer;
+import {
+  FooterContainer,
+  Row,
+  P,
+  Span,
+  CartIconContainer,
+} from "./footer.styles";
+
+const Footer = ({ hidden }) => (
+  <FooterContainer>
+    <Row>
+      <P>
+        developed by idowu elijah <Span>&copy;2022</Span>{" "}
+      </P>
+      <CartIconContainer />
+    </Row>
+    {hidden ? null : <CartDropdown />}
+  </FooterContainer>
+);
+
+const mapStateToProps = createStructuredSelector({
+  hidden: selectCartHidden,
+});
+export default connect(mapStateToProps)(Footer);

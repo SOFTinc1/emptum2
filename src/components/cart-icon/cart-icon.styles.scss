@@ -6,6 +6,11 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin: -5px 0 0 0;
+
+  @media screen and (max-width: 800px) {
+    margin: -5px 0 0 0;
+  }
 
   .shopping-icon {
     width: 34px;

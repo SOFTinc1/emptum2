@@ -9,7 +9,7 @@ export const CartDropdownContainer = styled.div`
   padding: 20px;
   border-radius: 5px;
   background: #fff;
-  top: 90px;
+  bottom: 90px;
   right: 40px;
   z-index: 9;
   transition: all 0.9s ease-in-out;

@@ -11,7 +11,7 @@ const SignUpPage = () => (
       <SignUpTittle>Create an account</SignUpTittle>
     </SignUpTextContainer>
 
-    <SignUpSpan>Kindly register to gain access to the platform.</SignUpSpan>
+    <SignUpSpan>Kindly register to gain access to the platform</SignUpSpan>
 
     <SignUp />
   </SignUpContainer>

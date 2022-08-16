@@ -13,8 +13,9 @@ export const CollectionPreviewContainer = styled.div`
 `;
 export const Title = styled.div`
   font-size: 28px;
-  margin-bottom: 25px;
+  margin: 25px 0;
   font-family: Syne;
+  font-weight: 800;
 `;
 export const Preview = styled.div`
   display: flex;
