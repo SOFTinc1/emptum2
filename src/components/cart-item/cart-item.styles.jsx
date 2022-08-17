@@ -7,8 +7,8 @@ export const CartItemProper = styled.div`
   height: 80px;
   margin-bottom: 15px;
   background: #fff;
+  color: #000;
   border-radius: 5px;
-  // border: 1px solid #f9fbfb;
 `;
 export const ImgSrc = styled.img`
   width: 30%;

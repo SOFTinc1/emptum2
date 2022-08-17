@@ -27,10 +27,10 @@ export const SignInTittle = styled.div`
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
-  color: #444946;
   margin-top: 36px;
   width: 100%;
   text-align: center;
+  // color: #444946;
 
   @media screen and (max-width: 800px) {
     width: 100%;
@@ -44,11 +44,11 @@ export const SignInSpan = styled.p`
   font-weight: 800;
   font-size: 16px;
   line-height: 25px;
-  color: #444946;
   margin-top: 24px;
   width: 100%;
   letter-spacing: 2px;
   text-align: center;
+  // color: #444946;
 
   @media screen and (max-width: 800px) {
     width: 100%;

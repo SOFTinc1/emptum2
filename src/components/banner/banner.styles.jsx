@@ -21,7 +21,7 @@ export const Upper = styled.div`
 }
 
 @media screen and (max-width: 500px) {
-  padding: 50px 0;
+  padding: 0;
 }
 `;
 export const Head = styled.h1`
@@ -58,6 +58,7 @@ export const Head = styled.h1`
     font-size: 180px;
     text-align: center;
     margin: 0;
+    margin: -50px 0 0 0;
   }
 
   @media screen and (max-width: 525px) {
@@ -81,6 +82,7 @@ export const H1 = styled.h1`
   @media screen and (max-width: 800px) {
     margin: -60px 0 0 0;
     width: 100%;
+    font-size: 50px;
   }
 `;
 export const P = styled.p`
@@ -102,6 +104,7 @@ export const P = styled.p`
     width: 100%;
     text-align: center;
     margin: 20px auto 0 auto;
+    font-size: 14px;
   }
 `;
 export const ImageRow = styled.div``;

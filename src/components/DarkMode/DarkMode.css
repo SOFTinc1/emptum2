@@ -8,6 +8,7 @@
   margin: -6px 0 0 -100px;
   border: none;
   transition: background-color 1s ease-in-out, filter 1s ease-in-out;
+
 }
 
 #darkMode:hover,

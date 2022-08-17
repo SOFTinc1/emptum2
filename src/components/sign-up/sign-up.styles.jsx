@@ -23,8 +23,8 @@ export const PasswordExtra = styled.div`
   font-weight: normal;
   font-size: 16px;
   line-height: 25px;
-  color: #555555;
   margin: -40px 0 30px 0;
+  // color: #555555;
 
   @media screen and (max-width: 800px) {
     width: 100%;
@@ -35,9 +35,9 @@ export const PasswordExtra = styled.div`
 `;
 export const SignUpRedirect = styled.h2`
   text-transform: capitalize;
-  color: #aaa;
   font-size: 18px;
   margin: 0;
+  // color: #aaa;
 
   @media screen and (max-width: 800px) {
     margin: 0;
@@ -46,11 +46,7 @@ export const SignUpRedirect = styled.h2`
 `;
 export const Span = styled(Link)`
   cursor: pointer;
-  color: #000;
-
-  &:hover {
-    color: #000;
-  }
+  // color: #000;
 `;
 export const ButtonsBarContainer = styled.div`
   display: flex;
@@ -70,7 +66,12 @@ export const ShowIcon = styled(ShowSvg)`
   left: 420px;
   bottom: 88px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 525px) {
+    left: 330px;
+    bottom: 90px;
+  }
+
+  @media screen and (max-width: 400px) {
     left: 300px;
     bottom: 80px;
   }
@@ -83,8 +84,13 @@ export const HideIcon = styled(HideSvg)`
   left: 420px;
   bottom: 88px;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 525px) {
+    left: 330px;
+    bottom: 90px;
+  }
+
+  @media screen and (max-width: 400px) {
     left: 300px;
-    bottom: 88px;
+    bottom: 80px;
   }
 `;

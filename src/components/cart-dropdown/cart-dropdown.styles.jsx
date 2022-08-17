@@ -8,13 +8,12 @@ export const CartDropdownContainer = styled.div`
   flex-direction: column;
   padding: 20px;
   border-radius: 5px;
-  background: #fff;
   bottom: 90px;
   right: 40px;
   z-index: 9;
   transition: all 0.9s ease-in-out;
   transform: scale(1.1);
-  background: #f9fbfb;
+  background: #263238;
   border: 2px solid #aaa;
   font-family: syne;
 

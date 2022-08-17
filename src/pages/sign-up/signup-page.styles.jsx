@@ -33,8 +33,8 @@ export const SignUpTittle = styled.div`
   font-weight: bold;
   font-size: 32px;
   line-height: 38px;
-  color: #444946;
   margin-top: 56px;
+  // color: #444946;
 
   @media screen and (max-width: 800px) {
     width: 100%;
@@ -52,8 +52,8 @@ export const SignUpSpan = styled.span`
   font-size: 16px;
   line-height: 25px;
   align-self: center;
-  color: #444946;
   margin-top: 24px;
+  // color: #444946;
 
   @media screen and (max-width: 800px) {
     width: 100%;

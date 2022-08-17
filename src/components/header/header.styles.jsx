@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 const OptionContainerStyles = css`
-  padding: 10px 15px;
+  padding: 10px 5px;
   font-weight: 800;
   letter-spacing: 0.1rem;
   cursor: pointer;
@@ -31,7 +31,7 @@ export const LogoContainer = styled(Link)`
   padding: 0 5px 5px 5px;
 
   @media screen and (max-width: 800px) {
-    width: 10%;
+    width: 40%;
     padding: 0;
   }
 `;
@@ -61,6 +61,10 @@ export const OptionsContainer = styled.div`
 export const OptionLink = styled(Link)`
   ${OptionContainerStyles}
   text-decoration: none;
+
+  @media screen and (max-width: 800px) {
+    font-size: 16px;
+  }
 `;
 
 export const OptionDiv = styled.div`
