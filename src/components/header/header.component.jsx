@@ -8,6 +8,7 @@ import {
   OptionDiv,
   Logo
 } from "./header.styles";
+import "./header.css";
 
 import { connect } from "react-redux";
 
@@ -15,8 +16,9 @@ import { auth } from "../../firebase/firebase.utils";
 
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
+import DarkMode from "../DarkMode/DarkMode";
 
-import LogoImg from "../../assets/images/emptum.svg";
+import LogoImg from "../../assets/images/logo.svg";
 
 const Header = ({ currentUser }) => (
   <HeaderContainer>
@@ -24,6 +26,7 @@ const Header = ({ currentUser }) => (
       <Logo src={LogoImg} />
     </LogoContainer>
     <OptionsContainer>
+      <DarkMode />
       <OptionLink to="/shop">
         {" "}shop{" "}
       </OptionLink>

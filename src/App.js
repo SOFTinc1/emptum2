@@ -17,7 +17,7 @@ import CollectionPage from "./pages/collection/collection.component";
 import Footer from "./components/footer/footer.component";
 import WithSpinner from "./components/with-spinner/with-spinner.components";
 
-import { GlobalStyle } from "./components/global.styles";
+// import { GlobalStyle } from "./components/global.styles";
 
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "./redux/user/user.selectors";
@@ -59,7 +59,7 @@ class App extends React.Component {
     const { loading } = this.state;
     return (
       <div>
-        <GlobalStyle />
+        {/* <GlobalStyle /> */}
         <Header/>
         <Routes>
           <Route exact path="/" element={<HomepageWithSpinner isLoading={loading} />} />

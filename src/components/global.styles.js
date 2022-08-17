@@ -11,17 +11,9 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    body {
-        font-family: "Mighty", "NewYork","Euclid";
-    }
-
     a {
         text-decoration: none;
-        color: #000;
-    }
-
-    a:hover {
-        color: #fff;
+        color: none;
     }
 
     button { 

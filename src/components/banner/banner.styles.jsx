@@ -11,6 +11,19 @@ export const BannerContainer = styled.div`
     padding: 30px 0;
   }
 `;
+export const Upper = styled.div`
+@media screen and (max-width: 1200px) {
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 800px) {
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 500px) {
+  padding: 50px 0;
+}
+`;
 export const Head = styled.h1`
   background-color: transparent;
   background-image: linear-gradient(
@@ -30,9 +43,24 @@ export const Head = styled.h1`
   margin: -30px 0 0 0;
   opacity: 0.1;
   text-transform: lowercase;
-  font-size: 200px;
+  font-size: 150px;
+
+  @media screen and (max-width: 2600px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 1200px) {
+    font-size: 250px;
+  }
 
   @media screen and (max-width: 800px) {
+    width: 100%;
+    font-size: 180px;
+    text-align: center;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 525px) {
     width: 100%;
     font-size: 89px;
     text-align: center;
@@ -43,7 +71,12 @@ export const H1 = styled.h1`
   text-align: center;
   font-size: 50px;
   padding: 0;
-  margin: -100px 0 0 0;
+  margin: -80px 0 0 0;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 90px;
+    margin: -150px 0 0 0;
+  }
 
   @media screen and (max-width: 800px) {
     margin: -60px 0 0 0;
@@ -61,6 +94,10 @@ export const P = styled.p`
   width: 600px;
   margin: 20px auto;
 
+  @media screen and (max-width: 1200px) {
+    font-size: 30px;
+  }
+
   @media screen and (max-width: 800px) {
     width: 100%;
     text-align: center;
@@ -77,7 +114,24 @@ export const Image1 = styled.div`
   transition: background-image 0.7s ease-in-out;
   background-image: url(${bannerImg});
 
+  @media screen and (max-width: 2600px) {
+    width: 100%;
+    height: 800px;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    height: 900px;
+    background-image: url(${bannerImgMobile});
+  }
+
   @media screen and (max-width: 800px) {
+    width: 100%;
+    height: 670px;
+    background-image: url(${bannerImgMobile});
+  }
+
+  @media screen and (max-width: 525px) {
     width: 100%;
     height: 350px;
     background-image: url(${bannerImgMobile});
@@ -125,6 +179,10 @@ export const Details = styled.p`
 export const ButtonC = styled(CustomButton)`
   margin: -70px auto 30px auto;
   width: 10%;
+
+  @media screen and (max-width: 1200px) {
+    width: 15%;
+  }
 
   @media screen and (max-width: 800px) {
     width: 40%;

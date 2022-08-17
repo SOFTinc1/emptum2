@@ -25,6 +25,7 @@ export const P = styled.p`
   font-size: 17px;
   margin: 10px 0 0 0;
   justify-content: flex-start;
+  color: #000;
 
   @media screen and (max-width: 800px) {
     font-size: 14px;

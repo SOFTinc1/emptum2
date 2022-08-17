@@ -61,13 +61,12 @@ export const AddButton = styled.button`
     border-top: 2px solid #000;
     font-weight: 800;
     transform: scale(1.0);
-
   }
 
   @media screen and (max-width: 800px) {
     display: block;
     padding: 2px 13px;
-    border: 2px solid #000;
+    border: none;
   }
 `;
 

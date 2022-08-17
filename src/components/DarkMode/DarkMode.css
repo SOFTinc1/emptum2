@@ -1,5 +1,5 @@
 #darkMode {
-  background: transparent url("../../assets/images/brightness-and-contrast.png") no-repeat center;
+  background: transparent url("../../assets/images/dark-mode.svg") no-repeat center;
   background-size: 30px 30px;
   width: 45px; 
   height: 45px;
@@ -21,5 +21,5 @@
 #darkMode.clicked {
   filter: none !important;
   background-color: transparent;
-  /* background: transparent url("../../assets/svg/brightness-and-contrast.png") no-repeat center; */
+  background: transparent url("../../assets/images/light-mode.svg") no-repeat center;
 }

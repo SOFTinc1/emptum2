@@ -10,7 +10,7 @@ export const CollectionPageContainer = styled.div`
   @media screen and (max-width: 800px) {
     align-items: center;
     margin-bottom: 30px;
-    padding: 0 10px 90px 10px;
+    // padding: 0 10px 90px 10px;
   }
 `;
 export const Title = styled.div`
