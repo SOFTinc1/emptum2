@@ -90,7 +90,7 @@ export const ShowIcon = styled(ShowSvg)`
 
   @media screen and (max-width: 400px) {
     left: 300px;
-    bottom: 80px;
+    bottom: 88px;
   }
 `;
 export const HideIcon = styled(HideSvg)`
@@ -108,6 +108,6 @@ export const HideIcon = styled(HideSvg)`
 
   @media screen and (max-width: 400px) {
     left: 300px;
-    bottom: 80px;
+    bottom: 88px;
   }
 `;

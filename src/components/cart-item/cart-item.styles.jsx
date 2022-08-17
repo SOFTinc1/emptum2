@@ -29,7 +29,7 @@ export const ItemDetails = styled.div`
 `;
 export const Name = styled.span`
   font-size: 16px;
-  margin: 15px 0 0 10px;
+  margin: 8px 0 0 10px;
   height: 40px;
   font-weight: 400;
 `;

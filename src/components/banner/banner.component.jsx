@@ -19,7 +19,7 @@ const Banner = () => (
       <Head>welcome</Head>
       <H1>there's good inside.</H1>
       <P>
-        unless your awesomeness with emptum store, where all things clothing are
+        unleash your awesomeness with emptum store, where all things clothing are
         readilty available with ease of order
       </P>
       <ButtonC>enter</ButtonC>

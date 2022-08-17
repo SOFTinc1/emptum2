@@ -58,7 +58,7 @@ export const Head = styled.h1`
     font-size: 180px;
     text-align: center;
     margin: 0;
-    margin: -50px 0 0 0;
+    margin: -45px 0 0 0;
   }
 
   @media screen and (max-width: 525px) {

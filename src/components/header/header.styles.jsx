@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 
 const OptionContainerStyles = css`
-  padding: 10px 5px;
   font-weight: 800;
   letter-spacing: 0.1rem;
   cursor: pointer;
@@ -38,7 +37,6 @@ export const LogoContainer = styled(Link)`
 
 export const Logo = styled.img`
   width: 100%;
-  // margin: -0.8rem 0 0 0;
 
   @media screen and (max-width: 800px) {
     margin: 0;
@@ -61,9 +59,17 @@ export const OptionsContainer = styled.div`
 export const OptionLink = styled(Link)`
   ${OptionContainerStyles}
   text-decoration: none;
+  padding: 10px 15px;
+  color: #aaa;
+
+  @media screen and (max-width: 525px) {
+    font-size: 18px;
+    padding: 10px 6px;
+  }
 
   @media screen and (max-width: 800px) {
-    font-size: 16px;
+    font-size: 14px;
+    padding: 10px 6px;
   }
 `;
 
